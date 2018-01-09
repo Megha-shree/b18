@@ -4,3 +4,6 @@ h1{
 .heading{
 	text-transform: uppercase;
 }
+.small span{
+	font-size: 13px;
+}
