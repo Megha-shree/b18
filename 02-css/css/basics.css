@@ -1,0 +1,122 @@
+/* This one is a CSS comment */
+/*Use Sublime package for adding comment snippets */
+
+/*=================================
+=            Selectors            =
+=================================
+
+selector-name{
+	css-rule : value;
+	css-rule : value;
+	css-rule : value;
+	..:..;
+	..:..;
+	..:..;
+}
+
+Universal Selectors
+	They are applied to all the html elements of that documnet
+*{
+	css-rule : value;
+	....
+}
+
+
+Tag or Type Selectors
+p{
+	css-rule : value;
+	....
+}
+
+Class Selectors
+.user-defined-name{
+	css-rule : value;
+	....
+} 
+======================
+a class name
+		* can be alpha numeric
+		* must not start with a number, 
+		* must not have special characters apart from hyphen and underscore 
+
+id Selectors
+#user-defined-name{
+	css-rule : value;
+	....
+}
+
+descendant Selectors
+psuedo Selectors - there are two types
+	
+1.	psuedo classes - starts with :
+			:link, :hover, :active, :focus, :first-child, :last-child, :nth-child()
+2. 	psuedo elements - starts with ::
+			::after, ::before, ::first-line, ::first-letter, ::selection
+
+attribute Selectors
+[attribute-name]{
+	css-rule : value;
+	....
+}
+=====  End of Selectors  ======*/
+*{
+
+}
+::-moz-Selection{
+	background: red;
+}
+h1{
+	color: #8E24AA;
+}
+.heading{
+	text-transform: uppercase;
+	background-color: #E1BEE7;
+}
+#mylist{
+	background-color: #D500F9;
+}
+.mylist{
+	background-color: #4A148C;
+}
+.description{
+	font-size: 28px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.description::first-letter{
+	color: #880E4F;
+}
+.description::first-line{
+	color: #536DFE;
+}
+.description::after{
+	content: "";
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-right: 20px solid red;
+}
+.description:hover{
+	color: #AD1457;
+}
+input:focus{
+	border-color: red;
+}
+.parent div:first-child{
+	color: red;
+}
+.parent div:nth-child(2){
+	color: blue;
+}
+.parent div:last-child{
+	color: green;
+}
+[href]{
+	color: pink;
+	font-size: 28px;
+}
+input[placeholder]{
+	color: yellow;
+}
