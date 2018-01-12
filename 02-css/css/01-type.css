@@ -1,70 +1,192 @@
-*{
-	padding: 0;
-	margin: 0;
+ /*==========================================================================
+		Few points to remeber for every CSS property
+		+++++++++++++++++++++++++++++++++++++++++++++++
+		• Default values for different elements
+		• Different values that can be given
+		• Does this property gets inherited?
+		• Can they be applied to all elements?
+		• Can they be animated?
+	 ========================================================================== */
+/*
+
+Font related style properties
++++++++++++++++++++++++++++++++++++++++++++
+~  font-style: normal | italic | oblique
+		^ cite, em, i, address - for these elements the default font-style is italic
+		^ This property gets inherited
+		^ This property can be applied to all the elements
+		^ Can't animate
+
+~  font-weight: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+							700 is bold, 400 is normal
+		^ h1, h2, h3, h4, h5, h6, strong, b - for these elements the default font-weight is bold or 700
+		^ This property gets inherited
+		^ This property can be applied to all the elements
+		^ Can't animate
+
+~  font-size:
+		^ px, %, em, rem, vw, vh
+		^ This property gets inherited
+		^ This property can be applied to all the elements
+		^ you can animate
+
+~  line-height:
+		^ px, %, em, rem, vw, vh
+		^ This property gets inherited
+		^ This property can be applied to all the elements
+		^ you can animate
+
+~  font-family: serif;
+		^ default font family is serif - which is normally "Times new roman"
+		^ font stacks, 
+		^ This property gets inherited
+		^ This property can be applied to all the elements
+		^ Can't animate
+Serif, Sans-serif, cursive, monospace
+
+Shorthand property
+~~   font: [font-style font-weight font-size/line-height font-family]
+
+~  text-transform: none | uppercase | lowercase | capitalize
+		^ default value is none
+		^ This property gets inherited
+		^ This property can be applied to all the elements
+		^ Can't animate
+
+~  color:
+		^ default value is black, "a" tag it is blue, 
+			:visited link it purple, 
+			:active link it is red
+		^ This property gets inherited
+		^ This property can be applied to all the elements
+		^ you can animate
+
+color values can be applied in 4 diff formats
+		colornames - eg. red; http://htmlcolorcodes.com/color-names/
+		hex decimal codes - eg. #FF0000
+    0 1 2 3 4 5 6 7 8 9 A B C D E F
+
+    RR GG BB
+    00 00 00 (Black) --> #000
+    FF 00 00 (Red)   --> #F00
+    00 FF 00 (Green) --> #0F0
+    00 00 FF (Blue)  --> #00F
+    FF FF FF (White) --> #FFF
+
+			hex decimal shorthand property - eg. #F00
+				#ff0011 -- #f01
+				#aa2233 -- #a23
+				#da1122 -- #da1122
+				#fafafa -- #fafafa
+				#fff222 -- #fff222
+
+		rgb value - eg. rgb(255,0,0)
+		rgba value - eg. rgba(255,0,0,1) - css3
+
+~  text-decoration:none | underline | overline | line-through
+		^ default value is none, only for 'a' tag you have underline
+		^ This property gets inherited
+		^ This property can be applied to all the elements
+		^ Can't animate
+
+
+• text-shadow – css3
+
+auto;
+inherit;
+
+
+~  font-style: normal | italic | oblique
+~  font-weight: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+~  font-size:
+~  line-height:
+~  font-family: serif;
+~   font: [font-style font-weight font-size/line-height font-family]
+~  text-transform: none | uppercase | lowercase | capitalize
+~  color:
+~  text-decoration:none | underline | overline | line-through
+~  text-shadow – css3
+
+*/
+
+/* ==========================================================================
+	 Demo of Font related properties
+	 ========================================================================== */
+	 /*----- font-style -----*/
+.fs span{
+	font-style: italic;
+	color: red;
 }
-header{
-	background-color: #FF9100;
-	padding-top: 20px;
+.fs1{
+	font-style: italic;
 }
-.container{
+
+/*---- font-weight -----*/
+.fw1{font-weight: 100;}
+.fw2{font-weight: 200;}
+.fw3{font-weight: 300;}
+.fw4{font-weight: 400;}
+.fw5{font-weight: 500;}
+.fw6{font-weight: 600;}
+.fw7{font-weight: 700;}
+.fw8{font-weight: 800;}
+.fw9{font-weight: 900;}
+.fw10{
+	font-weight: bolder;
+}
+
+/*---- font-size -----*/
+.fsz{
+	font-size: 14px;
+}
+.fsz h1{
+	font-size: 2.5em;
+}
+.fsz p{
+	font-size: 2rem;
+}
+.fsz1{
+	font-size: 2vw;
+}
+.fsz2{
+	font-size: 2em;
+	transition: all 1s ease;
+}
+.fsz2:hover{
+	font-size: 3em;
+	color: green;
+	transition: all 1s ease;
+}
+.vw1,.vw2,.vw3,.vw4,.vw5,.vw6,.vw7,.vw8,.vw9,.vw10{
+	height: 30px;
+	background-color: red;
+	margin: 10px auto;
+}
+.vw1{width: 10vw;}
+.vw2{width: 20vw;}
+.vw3{width: 30vw;}
+.vw4{width: 40vw;}
+.vw5{width: 50vw;}
+.vw6{width: 60vw;}
+.vw7{width: 70vw;}
+.vw8{width: 80vw;}
+.vw9{width: 90vw;}
+.vw10{width: 100vw;}
+
+/*----- line-height -----*/
+.lh{
+	width: 50vw;
 	margin: 0 auto;
-	padding: 0 15px;
+	background-color: #EF9A9A;
+	padding: 10px;
+	border: 2px solid #E53935;
+	height: 200px;
 }
-@media(min-width: 768px){
-	.container{
-		width: 720px;
-	}
+.lh p{
+	color: #444;
+	transition: all 1s ease;
 }
-@media(min-width: 992px){
-	.container{
-		width: 980px;
-	}
-}
-@media(min-width: 1200px){
-	.container{
-		width: 1170px;
-	}
-}
-h1{
-	color: #fff;
-	text-align: center;
-	padding-bottom: 20px;
-	font-size: 38px;
-}
-.site-nav{
-	background-color: #FFA726;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  position: relative;
- }
-.site-nav ul{
-	list-style: none;
-	padding: 6px 0;
-}
-.site-nav  ul li{
-	display: inline-block;
-	padding: 5px 10px;
-}
-.site-nav ul li a{
-	color: #fff;
-	font-size: 16px;
-	text-decoration: none;
-}
-.site-nav ul li a.active{
-	color: #4A148C;
-}
-.site-nav ul li:hover a{
-	color: #4A148C;
-}
-.banner{
-	background-color: #FFB74D;
-	padding: 40px 0;
-}
-.banner h2{
-	color: #333;
-	font-size: 34px;
-	margin-bottom: 10px;
-}
-.banner p{
-	color: #666;
-	font-size: 18px;
+.lh p:hover{
+	line-height: 2;
+	transition: all 1s ease;
 }
