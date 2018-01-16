@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:400,500,700');
-html{
+/*@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:400,500,700');
+*/html{
 	font-size: 16px;
 }
 body{
 	color: #444;
 	line-height: 1.4;
-  font-family: 'Roboto slab', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 0;
   overflow-y: scroll;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	
 }
 /*----- header styles -------*/
 header{

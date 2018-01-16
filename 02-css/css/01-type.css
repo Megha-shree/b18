@@ -190,3 +190,47 @@ inherit;
 	line-height: 2;
 	transition: all 1s ease;
 }
+/* font property */
+.sf{
+	font:italic 700 3em/1.8 'Roboto', sans-serif;
+}
+
+/* text-transform */
+.ttu{
+	text-transform: uppercase;
+}
+.ttl{
+	text-transform: lowercase;
+}
+.ttc{
+	text-transform: capitalize;
+}
+
+/* Color */
+.cr{
+	color: rgb(255,87,34);
+}
+.cra{
+	background-color: rgb(121,134,203,.5);
+}
+.ca:hover p{
+	color: olive;
+}
+.cv a:visited{
+	color: #388E3C;
+}
+
+/* text-decoration */
+.tdu{
+	text-decoration: underline;
+}
+.tdo{
+	text-decoration: overline;
+}
+.tdl{
+	text-decoration: line-through;
+}
+.ts{
+	text-shadow: 1px 2px 0px rgba(255,0,0,.5);
+	font-size: 30px;
+}
