@@ -88,3 +88,103 @@ inherit;
 .va img{
   vertical-align: middle;
 }
+
+/***** text-align *****/
+.ta{
+  width: 700px;
+  margin: 0 auto;
+}
+.ta-l{
+  text-align: left;
+}
+.ta-r{
+  text-align: right;
+}
+.ta-c{
+  text-align: center;
+}
+.ta-j{
+  text-align: justify;
+}
+
+/***** text-indent *****/
+.ti{
+  text-indent: 100px;
+}
+/***** white-space *****/
+.ws{
+  overflow: auto;
+  white-space: pre-wrap;
+}
+/*.ws-p{
+  white-space: pre;
+}
+.ws-nw{
+  white-space: nowrap;
+}
+.ws-pw{
+  white-space: pre-wrap;
+}*/
+.overflow-wordbreak{
+  width: 200px;
+  overflow-wrap: break-word;
+  hyphens: manual;
+}
+/***** dispay *****/
+.dis > a{
+  width: 500px;
+  background-color: wheat;
+  display: block;
+}
+.dis-inline{
+  list-style: none
+}
+.dis-inline li{
+  display: inline;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #777;
+  margin: 20px;
+  padding: 20px;
+}
+.dis-inline-b{
+  list-style: none
+}
+.dis-inline-b li{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 10px;
+  padding: 10px;
+}
+.smilies{
+  width: 200px;
+  position: relative;
+}
+.smilies img{
+  width: 100%;
+}
+.smilies img:last-child{
+  position: absolute;  
+  top: 0;
+  left: 0;
+  display: none;
+}
+.smilies:hover img:last-child{
+  display: block;
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+/***** Text-overflow *****/
+.to p{
+  width: 200px;
+  border: 1px solid;
+  padding: 2px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: "[...]";
+}
