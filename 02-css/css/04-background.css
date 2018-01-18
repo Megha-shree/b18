@@ -1,0 +1,157 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Background related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+~  background-color -
+    ^ default value transparent
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+~  background-image - url()
+    ^ default value none
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+~  background-repeat: repeat | no-repeat | repeat-x | repeat-y
+    ^ default value is repeat
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can't animate
+
+~  background-attachment- scroll | fixed
+    ^ default value is scroll
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can't animate
+
+~  background-position
+    values are specified in key words as x & y codordinates
+      for x - left center right
+      for y - top center bottom
+      you can also specify as length
+
+    ^ default value is left top - 0 0
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can't animate
+
+background [color image repeat attachment position]
+
+~  background-size – auto | contain | cover | -length-
+    ^ default value is auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can't animate
+
+
+
+
+Sprites - 
+background-origin – border-box, padding-box, content-box
+background-clip – 
+multiple backgrounds – CSS3
+Gradient Backgrounds – CSS3
+
+
+
+auto;
+inherit;
+
+Background related important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en/docs/Web/CSS/background-color
+*/
+
+/* ==========================================================================
+   Demo of Background related properties
+   ========================================================================== */
+
+/*----------  background-color  ----------*/
+.bgc{
+  border: 10px dotted MediumPurple;
+  transition: background 1s ease;
+}
+.bgc:hover{
+  /* background-color: royalBlue; */
+  background-color: rgba(0,0,0,.5);
+  transition: background 1s ease;
+}
+/*----------  background-image  ----------*/
+.bgi{
+  background-image: url(../img/paint.jpg);
+  height: 500px;
+}
+.bgi1{
+  background-image: url(../img/leaf.png);  
+  padding: 30px;
+  height: 200px;  
+}
+/*----------  background-repeat  ----------*/
+.bgnr{
+  background-image: url(../img/leaf.png); 
+  padding: 30px;
+  background-repeat: no-repeat;
+  border: 6px dotted pink;
+}
+.bgrx{
+  background-image: url(../img/leaf.png); 
+  padding: 30px;
+  background-repeat: repeat-x;
+  border: 6px dotted pink;
+  height: 200px;
+}
+.bgry{
+  background-image: url(../img/leaf.png); 
+  padding: 30px;
+  background-repeat: repeat-y;
+  border: 6px dotted pink;
+  height: 200px;
+}
+/*----------  background-attachment  ----------*/
+.bgas{
+  background-image: url(../img/paint.jpg);
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.bgaf{
+  background-image: url(../img/black-and-white.jpg);
+  background-repeat: no-repeat;
+  height: 500px;
+  background-attachment: fixed;
+}
+/*----------  background-position  ----------*/
+.bgp{
+  background-image: url(../img/paint.jpg);
+  background-repeat: no-repeat;
+  height: 200px;
+  /*background-position: left bottom;*/
+  /*background-position: left top;*/
+  /*background-position: right bottom;*/
+  /*background-position: center center;*/
+  /*background-position: center;*/
+  background-position: 20% 10%;
+}
+/*----------  background-position  ----------*/
+.bg{
+  background: red url(../img/paint.jpg) no-repeat center;
+  height: 200px;
+}
+/*----------  background-size  ----------*/
+.bgs{
+  background-image: url(../img/paint.jpg);
+  background-repeat: no-repeat;
+  height: 200px;
+  background-size: 200px 400px;
+}
