@@ -1,4 +1,4 @@
-/* ==========================================================================
+ /*==========================================================================
     Few points to remeber for every CSS property
     +++++++++++++++++++++++++++++++++++++++++++++++
     • Default values for different elements
@@ -59,7 +59,7 @@ background [color image repeat attachment position]
 
 Sprites - 
 background-origin – border-box, padding-box, content-box
-background-clip – 
+background-clip –  
 multiple backgrounds – CSS3
 Gradient Backgrounds – CSS3
 
@@ -154,4 +154,85 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
   background-repeat: no-repeat;
   height: 200px;
   background-size: 200px 400px;
+}
+/*---------- sprites  ----------*/
+.bird-s{
+  background-image: url(../img/sprites.png);
+  height: 200px;
+  background-repeat: no-repeat;
+}
+
+.sprites:after{
+  content: "";
+  display: block;
+  clear: left;
+}
+.sprites{
+  margin: 20px;
+}
+.birds{
+  background-image: url(../img/sprites.png);
+  width: 133px;
+  height: 100px;
+  background-repeat: no-repeat;
+  border: 5px solid red;
+  float: left;
+  margin: 10px;
+}
+.bird1{background-position: -1px 0;}
+.bird2{background-position: -134px 0;}
+.bird3{background-position: -267px 0;}
+.bird4{background-position: -401px 0;}
+.bird5{background-position: -534px 0;}
+.bird6{background-position: -667px 0;}
+.bird7{background-position: -1px -100px;}
+.bird8{background-position: -134px -100px;}
+.bird9{background-position: -267px -100px;}
+.bird10{background-position: -401px -100px;}
+.bird11{background-position: -534px -100px;}
+.bird12{background-position: -666px -100px;}
+
+/*----------  background-origin  ----------*/
+.bgo{
+  padding: 10px;
+  border: 15px solid rgba(255,0,0,.5);
+  width: 1066px;
+  height: 598px;
+  background-image: url(../img/paint.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-origin: border-box;
+  /*background-origin: border-box;*/
+  /*background-origin: padding-box;*/
+  background-origin: content-box;
+}
+.bgcl{
+  padding: 30px;
+  border: 15px solid rgba(255,0,0,.5);
+  width: 550px;
+  height: 450px;
+  background-image: url(../img/birds.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  /*background-clip: padding-box;  */
+  /*background-clip: content-box;  */
+}
+.multi-bg{
+  width: 1000px;
+  height: 500px;
+  background:  url(../img/black-and-white.jpg) no-repeat center,
+              url(../img/birds.jpg) no-repeat center,
+              url(../img/paint.jpg) no-repeat right;
+             
+}
+/*----------  gradient  ----------*/
+.gradient-bg{
+  width: 300px;
+  height: 200px;
+  /*background: linear-gradient(blue,red,green,pink);*/
+  /*background: linear-gradient(to top right, red, blue);*/
+  /*background: linear-gradient(250deg, red, blue);*/
+  background: repeating-radial-gradient(black, black 5px, white 5px, white 10px);;
 }
