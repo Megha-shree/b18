@@ -1,0 +1,257 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Border related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+~  border-width -
+    ^ default value 3px - normal
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+~  border-style: none solid dotted dashed 
+                  double ridge groove inset outset
+    ^ default value none
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+~  border-color: 
+    ^ default value is color of text
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+border-top-style: ;
+border-top-width: ;
+border-top-color: ;
+
+border-right-style: ;
+border-right-width: ;
+border-right-color: ;
+
+border-bottom-style: ;
+border-bottom-width: ;
+border-bottom-color: ;
+
+border-left-style: ;
+border-left-width: ;
+border-left-color: ;
+
+Shorthand property
+border-top: [border-top-style border-top-width border-top-color]
+border-right: [border-right-style border-right-width border-right-color]
+border-bottom: [border-bottom-style border-bottom-width border-bottom-color]
+border-left: [border-left-style border-left-width border-left-color]
+
+
+Shorthand property
+border: [border-style border-width border-color]
+
+
+
+~  border-radius – length or percentage-
+    ^ default value is auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+border-image: url() | height | width | repeat
+
+border-collapse
+border-spacing
+empty-cells – show | hide
+
+
+
+
+auto;
+inherit;
+
+Border related important links
++++++++++++++++++++++++++++++++++++++++++++
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Border-image_generator
+
+
+*/
+
+/* ==========================================================================
+   Demo of Border related properties
+   ========================================================================== */
+.box{
+    width: 100px;
+    min-height: 100px;
+    background-color: wheat;
+    margin: 5px auto;
+
+}  
+.bb1{
+    border-width: 7px;
+    border-style: solid;
+    border-color: red;
+}
+.bb2{
+    border-top-style: dotted;
+    border-top-width: 10px;
+    border-top-color: pink;
+
+    border-right-style: dashed;
+    border-right-width: 10px;
+    border-right-color: green;
+
+    border-bottom-style: ridge;
+    border-bottom-width: 20px;
+    border-bottom-color: blue;
+
+    border-left-style: double;
+    border-left-width: 10px;
+    border-left-color: crimson;
+
+}
+.bb3{
+    border: solid 10px green;
+    border-color: red blue green orange;
+    border-width: 10px 20px;
+    border-style: solid dotted;
+}
+.box1{
+    width: 700px;
+    margin: 10px auto;
+}
+.box1 img{
+    width: 100%;
+}
+.numbers {
+    width: 600px;
+    height:350px; 
+    margin: 10px auto;
+    /*border: 1px solid red;*/
+}
+.numbers:after {
+    content: "";
+    display: inline-block;
+    clear: left;
+
+}
+.numbers .number{
+    float: left;
+    width: 80px;
+    padding: 15px;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    text-align: center;
+}
+.br{
+    border-right: 2px solid #000;
+}
+.bb{
+    border-bottom: 2px solid #000;
+}
+/*--------border-radius---------*/
+.brr{
+    border-radius: 20px;
+    border: 2px solid red;
+}
+.brr1{
+    border-radius: 50%;
+    border: 2px solid red;
+}
+.brr2{
+    border: 2px solid red;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 200px;
+}
+.box1{
+    width: 0;
+    height: 0;
+}
+.box1.br{
+    border-top: solid 30px red;
+    border-bottom: solid 30px yellow;
+    border-right: solid 30px blue;
+    border-left: solid 30px green;
+}
+.box1.br1{
+    border-top: solid 30px red;
+    border-right: solid 30px transparent;
+    border-left: solid 30px transparent;
+}
+.box1.br2{
+    border-bottom: solid 30px red;
+    border-right: solid 30px transparent;
+    border-left: solid 30px transparent;
+}
+.box1.br3{
+    border-left: solid 30px red;
+    border-bottom: solid 30px transparent;
+    border-top: solid 30px transparent;
+}
+.box1.br4{
+    border-right: solid 30px red;
+    border-bottom: solid 30px transparent;
+    border-top: solid 30px transparent;
+}
+.bri{
+  border: 30px solid pink;
+  border-image: url("../img/border.png") 30;
+}
+.bri1{
+  border: 30px solid pink;
+  border-image: linear-gradient(red, blue, green, orange)30;
+}
+.brs{
+  width: 200px;
+  height: 100px;
+  margin: 10px auto;
+  background-color: lightblue;
+  padding: 5px;
+  position: relative;
+}
+.brs:after{
+  content: "";
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-left: 20px solid lightblue;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  bottom: 0;
+}
+.brst{
+  width: 200px;
+  height: 100px;
+  margin: 10px auto;
+  background-color: lightblue;
+  padding: 5px;
+  position: relative;
+}
+.brst:after{
+  content: "";
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-top: 20px solid red;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  left: 0;
+}
