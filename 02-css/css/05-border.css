@@ -247,7 +247,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Bord
   width: 0;
   height: 0;
   margin: auto;
-  border-top: 20px solid red;
+  border-top: 20px solid lightblue;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   position: absolute;
