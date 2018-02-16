@@ -1,0 +1,218 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Position related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+~  position: static | relative | absolute | fixed  |  sticky
+    ^ default value static
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+    eg: 
+      .someclass{position:relative}
+      .someclass{position:absolute}
+      .someclass{position:sticky}
+      .someclass{position:fixed}
+
+~  top   : <length>
+~  bottom: <length>
+~  right : <length>
+~  left  : <length>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all positioned elements
+    ^ You can animate
+
+~  z-index: auto | <integer>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all positioned elements
+    ^ You can animate
+
+
+
+~  visibility: visible | hidden | collapse
+Applies to all elements
+overflow: visible | hidden | scroll | auto
+overflow-x
+overflow-y
+
+auto;
+inherit;
+
+Background related important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en/docs/Web/CSS/background-color
+*/
+
+/* ==========================================================================
+   Demo of Position related properties
+   ========================================================================== */
+.demo-static-1{
+  width: 100%;
+  height: 50px;
+  background-color:red;
+  margin-bottom: 20px;
+}
+.demo-static-2{
+  height: 50px;
+  background-color: red;
+  position: static;
+}
+
+.demo-relative-1{
+  width: 100%;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  margin-bottom: 20px;
+}
+.demo-relative-2{
+  height: 50px;
+  background-color: red;
+  position: relative;
+}
+
+.demo-relative-11{
+  width: 400px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  top:-20px;
+  left: 200px;
+  margin-bottom: 20px;
+}
+
+.demo-relative-22{
+  height: 50px;
+  background-color: red;
+  position: relative;
+  top:40px;
+  left:50px;
+}
+.demo-absolute-1{
+  background-color:red;
+  margin-bottom: 20px;
+  position: absolute;
+  width: 500px;
+  height: 50px;
+}
+
+.absolute-with-relative{
+  position: relative;
+  height: 400px;
+  border:solid 2px green;
+}
+
+.absolute-with-1{
+  position: absolute;
+  background-color:red;
+  width: 100px;
+  height: 100px;
+  top:50px;
+  left: 60px;
+}
+.fixed-relative{
+  position: relative;
+}
+.demo-fixed-1{
+  background-color:red;
+  height: 50px;
+  position: fixed;
+  width: 200px;
+  top:0;
+}
+.demo.sticky{
+  height: 400px;
+}
+.demo-sticky{
+  width: 100%;
+  height: 50px;
+  background-color: green;
+  position: sticky;
+  top:0;
+}
+
+.tomorrow-wrap{
+  background-color:lightgreen;
+  height: 500px;
+  position: relative;
+}
+
+.left-btn, .right-btn{
+  width: 40px;
+  height: 40px;
+  background-color:red;
+  border-radius:50%;
+  position: absolute;
+  top:40%;
+}
+.left-btn{
+  left:0;
+}
+.right-btn{
+  right:0;
+  /*position: static;*/
+}
+.bottom-box{
+  background-color: rgba(0,0,0, 0.3);
+  height: 100px;
+  position: absolute;
+  bottom: 0; 
+  width: 100%;
+}
+
+.bottom-box h3{
+  font-size: 30px;
+  text-align: center;
+}
+
+.box-1{
+  width: 300px;
+  height: 200px;
+  background-color:red;
+  border-radius:4px;
+  position: absolute;
+  left: 100px;
+  top:80px;
+  z-index: 1;
+}
+.box-2{
+  width: 300px;
+  height: 200px;
+  border-radius:4px; 
+  background-color: pink;
+  position: absolute;
+  left: 200px;
+  top:150px;
+  z-index: 2;
+}
+.box-3{
+  width: 300px;
+  height: 200px;
+  border-radius:4px; 
+  background-color: black;
+  position: absolute;
+  left: 280px;
+  top:190px; 
+  z-index:1;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>At Rules</title>
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/09-font-icons.css" />
+	<link rel="stylesheet" href="css/fontawesome-all.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500,500i,700" rel="stylesheet"> 
+</head>
+<body>
+	<header>
+		<h1 class="logo">Cascading Style Sheet</h1>
+		<nav class="site-nav">
+			<div class="container">
+				<ul>
+					<li><a href="type.html">Type</a></li>
+					<li><a href="block.html">Block</a></li>
+					<li><a href="list.html">List</a></li>
+					<li><a href="background.html">Background</a></li>
+					<li><a href="border.html">Border</a></li>
+					<li><a href="box.html">Box</a></li>
+					<li><a href="position.html">Position</a></li>
+					<li><a href="at-rules.html">@rules</a></li>
+					<li><a class="active" href="font-icons.html">Font icons</a></li>
+			</ul>		
+			</div><!-- /.container -->
+		</nav>
+	</header>
+	<section class="banner">
+		<div class="container">
+			<h2>CSS Properties related to Font icons</h2>
+			<p>Learn about all style properties related to Font icons in a eloborate way with examples</p>
+		</div><!-- /.container -->
+	</section><!-- /.banner -->
+	<section class="detail">
+		<div class="container">
+
+			<h2 class="sub-title"><span>Demo of</span> font-Icon</h2>
+			<div class="demo">
+			 	<div class="product">
+			 		<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+			 		<h2>Product Name</h2>
+			 		<p>1200</p>
+			 	</div><!-- /.product -->
+			 	<p class="copy">Copyright</p>
+			</div><!-- /.demo -->
+
+			<h2 class="sub-title"><span>Demo of</span> Responsive images</h2>
+			<div class="demo">
+			 <figure>
+			 	<figcaption>
+			 		<p>Figcaption</p>
+			 	</figcaption>
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/banner.jpg" />
+					<source media="(min-width: 800px)" srcset="img/banner-tab.jpg" />
+					<source media="(max-width: 768px)" srcset="img/banner-mobile.jpg" />
+					<img src="img/banner.jpg" alt="banner" />
+				</picture>
+			 </figure>
+
+			  <div class="image">
+			  	<img srcset="img/banner.jpg 1600w,
+				 							img/banner-tab.jpg 768w,
+				 							img/banner-mobile.jpg 480w"	
+				 			sizes="(min-width: 1200px) 992px,
+				 					   (min-width: 800px) 768px,
+				 					   (max-width: 480px) 440px" 
+				 			src="img/banner.jpg" alt="Banner" />
+			  </div><!-- /.img -->
+	
+				</div><!-- /.demo -->
+		</div><!-- /.container -->
+	</section>
+
+
+	<footer class="site-footer">
+		<p>&copy; 2017 - all rights reserved, <a href="http://www.htmlden.com/">htmlden - school of webdesign</a></p>
+	</footer><!-- /.site-footer -->
+	
+</body>
+</html>
