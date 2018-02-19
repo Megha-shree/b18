@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Video-Audio</title>
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/11-video-audio.css" />
+	<link rel="stylesheet" href="css/fontawesome-all.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500,500i,700" rel="stylesheet"> 
+</head>
+<body>
+	<header>
+		<h1 class="logo">Cascading Style Sheet</h1>
+		<nav class="site-nav">
+			<div class="container">
+				<ul>
+					<li><a href="type.html">Type</a></li>
+					<li><a href="block.html">Block</a></li>
+					<li><a href="list.html">List</a></li>
+					<li><a href="background.html">Background</a></li>
+					<li><a href="border.html">Border</a></li>
+					<li><a href="box.html">Box</a></li>
+					<li><a href="position.html">Position</a></li>
+					<li><a href="at-rules.html">@rules</a></li>
+					<li><a href="font-icons.html">Font icons</a></li>
+					<li><a href="tables.html">Font icons</a></li>
+					<li><a href="tables.html">Tables</a></li>
+					<li><a class="active" href="video-audio.html">Video-Audio</a></li>
+			</ul>		
+			</div><!-- /.container -->
+		</nav>
+	</header>
+	<section class="banner">
+		<div class="container">
+			<h2>CSS Properties related to Video-Audio</h2>
+			<p>Learn about all style properties related to Video-Audio in a eloborate way with examples</p>
+		</div><!-- /.container -->
+	</section><!-- /.banner -->
+	<section class="detail">
+		<div class="container">
+
+			<h2 class="sub-title"><span>Demo of</span> Video</h2>
+			<div class="demo">
+				<!-- Simple video example -->
+				<div class="video-demo">
+					<video src="media/Setangibeach.mp4" loop controls poster="media/video.jpg">
+					Sorry, your browser doesn't support embedded videos, 
+					but don't worry, you can <a href="media/Setangibeach.mp4">download it</a>
+					and watch it with your favorite video player!
+					</video>
+				</div><!-- /.video-demo -->	
+
+				<video class="video" controls
+				  poster="media/video.jpg" >
+				  <source
+				    src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm"
+				    type="video/webm">
+				  <source
+				    src="media/Setangibeach.mp4"
+				    type="video/mp4">
+				  <source
+				    src="media/Setangibeach.ogv"
+				    type="video/ogg">
+				  Your browser doesn't support HTML5 video tag.
+				</video>
+			</div><!-- /.demo -->
+			<audio src="media/APPLAUSE.WAV" autobuffer controls></audio>
+
+			<audio autobuffer controls>
+				<source src="media/Zingaat-Sairat.mp3"  type="audio/mp3"/>
+				<source src="media/APPLAUSE.WAV"  type="audio/WAV"/>
+			</audio>
+
+
+		</div><!-- /.container -->
+	</section>
+
+
+	<footer class="site-footer">
+		<p>&copy; 2017 - all rights reserved, <a href="http://www.htmlden.com/">htmlden - school of webdesign</a></p>
+	</footer><!-- /.site-footer -->
+	
+</body>
+</html>

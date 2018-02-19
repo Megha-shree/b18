@@ -1,0 +1,82 @@
+
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+CSS @ Rules
++++++++++++++++++++++++++++++++++++++++++++
+
+    1.  @charset
+    2.  @fontface
+    3.  @import
+    4.  @media
+    5.  @keyframes
+
+
+
+
+Important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en/docs/Web/CSS/At-rule
+
+https://css-tricks.com/the-at-rules-of-css/
+
+https://css-tricks.com/snippets/html/glyphs/
+
+https://daneden.github.io/animate.css/
+
+http://mynameismatthieu.com/WOW/
+
+http://animista.net/
+
+
+border-collapse
+border-spacing
+empty-cells – show | hide
+
+
+
+*/
+
+
+.ftable{
+	background-color: wheat;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.stable{
+	width: 50%;
+	margin: 30px auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.ttable{
+	width: 80%;
+	margin: 30px auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.ttable thead{
+	background-color: #1B5E20;
+	color: #fff;
+}
+.ttable tbody tr:nth-child(2n){
+	background-color: #66BB6A;
+}
+.ttable tbody tr:nth-child(2n+1){
+	background-color: #D4E157;
+}
+.ttable tbody tr:nth-child(2n):hover{
+	background-color: #43A047;
+}
+.ttable tbody tr:nth-child(2n+1):hover{
+	background-color: #AFB42B;
+}
