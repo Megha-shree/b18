@@ -1,6 +1,62 @@
+*{
+  box-sizing: border-box;
+}
+
+
+
 .video-demo video{
 	width: 100%;
 }
 .video{
 	width: 50%;
 }
+
+/*aspect Ratio Images*/
+.photos{
+	background-color: #ccc;
+	padding: 10px 0;
+}
+.photos h1{
+	text-align: center;
+}
+.photos:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.images{
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+.image{
+	background-color: #FFF;
+  border: solid 1px #CCC;
+  border-radius: 5px;
+  padding: 5px;
+  border-radius: 4px
+}
+.img-wrap:after{
+	content: "";
+	width: 100%;
+	display: block;
+}
+.img-wrap{
+	position: relative;
+	overflow: hidden;
+}
+.image img{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+._4x3:after  {padding-top: 75%; }
+._3x4:after  {padding-top: 133.3333%; }
+._1x1:after  {padding-top: 100%; }
+._1x2:after  {padding-top: 50%; }
+._2x1:after  {padding-top: 150%; }
+._16x9:after {padding-top: 56.25%; }
+._9x16:after {padding-top: 177.7778%; }
